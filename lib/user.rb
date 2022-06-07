@@ -14,6 +14,6 @@ class User
     if bday < Date.today
       bday = Date.new(Time.now.year.to_i + 1, month.to_i, day.to_i)
     end
-    p bday
+    bday
   end
 end

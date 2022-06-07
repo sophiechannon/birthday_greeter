@@ -8,7 +8,7 @@ class BdayCalc
   end
 
   def result
-    p days_to_go == 0 ? :today : :future
+    days_to_go == 0 ? :today : :future
   end
 
   def days_to_go
