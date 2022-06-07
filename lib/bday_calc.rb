@@ -1,8 +1,7 @@
 require 'date'
+
 class BdayCalc
   attr_accessor :user
-  MONTHS = Date::MONTHNAMES
-
   def initialize(user)
     @user = user
   end
@@ -12,6 +11,6 @@ class BdayCalc
   end
 
   def days_to_go
-    (Date.today - user.birthday).to_i
+    (user.birthday-Date.today).to_i
   end
 end

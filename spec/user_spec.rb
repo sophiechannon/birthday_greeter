@@ -16,4 +16,8 @@ describe User do
     allow(Date).to receive(:today).and_return static_future_date
     expect(user.birthday).to eq Date.new(2023,8,15)
   end
+
+  it "fails if not a valid date" do
+    expect { User.new("Sophie", "32", "8") }.to raise_error ("Invalid date")
+  end
 end

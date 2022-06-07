@@ -1,16 +1,18 @@
 <h1>Hello!</h1>
-<div class="container">Please enter your details</div>
-<div class="container">
+<h2>Please enter your details</h2>
   <form action="/user_info" method="post">
+  <div class="container">
     <label for="name">Your name:
       <input type="text" name="name" required>
     </label>
+  <div class="container">
+  <div class="container">
     When is your birthday?
     <label for="name">Day:
       <input type="text" name="day" required>
     </label>
     <label for="month">Month:
-      <select name="month" id="month">
+      <select name="month" id="month" class="dropdown">
         <option value="1">January</option>
         <option value="2">February</option>
         <option value="3">March</option>
@@ -25,6 +27,7 @@
         <option value="12">December</option>
       </select>
     </label>
+    <div class="container">
     <input type="submit" value="Confirm">
   </form>
 </div>
