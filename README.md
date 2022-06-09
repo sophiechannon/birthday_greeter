@@ -10,7 +10,7 @@ Testing: RSpec, Capybara
 
 _How to use_
 
-Use Rackup command with http://localhost:9292/
+Use Rackup command with http://localhost:9292/.
 
 ````console
 % bundle install
